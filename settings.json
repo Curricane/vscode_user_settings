@@ -89,6 +89,13 @@
             "type": "command",
             "command": "workbench.action.closeActiveEditor"
         },
+        {
+            "keys": "f",
+            "name": "Find File",
+            "icon": "search",
+            "type": "command",
+            "command": "file-browser.open"
+        }
     ],
     "fittencode.languagePreference.displayPreference": "zh-cn",
     "fittencode.languagePreference.commentPreference": "zh-cn"
