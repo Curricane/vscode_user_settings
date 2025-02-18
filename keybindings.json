@@ -11,16 +11,6 @@
 		"when": "sideBarFocus && !inputFocus && !whichkeyActive"
 	},
 	{
-		"key": "tab",
-		"command": "extension.vim_tab",
-		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
-	},
-	{
-		"key": "tab",
-		"command": "-extension.vim_tab",
-		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-	},
-	{
 		"key": "x",
 		"command": "magit.discard-at-point",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
@@ -143,6 +133,8 @@
 		"command": "file-browser.stepIn",
 		"when": "inFileBrowser"
 	},
+
+	/// custom
 	{
 		// must add this to make vspacecode conditional e setting work
 		"key": "e",
@@ -152,5 +144,24 @@
 			"when": "sideBarVisible && explorerViewletVisible"
 		},
 		"when": "whichkeyVisible && sideBarVisible && explorerViewletVisible"
-	}
+	},
+	{
+		"key": "tab",
+		"command": "workbench.action.nextEditor",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && vim.mode != 'Visual' && editorLangId != 'magit'"
+	},
+	{
+		"key": "shift+tab",
+		"command": "workbench.action.previousEditor",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && vim.mode != 'Visual' && editorLangId != 'magit'"
+	},
+	{
+		"key": "shift+k",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus && !editorHasSelection"
+	},
+	{
+		"key": "alt+3",
+		"command": "workbench.action.terminal.toggleTerminal",
+	},
 ]
