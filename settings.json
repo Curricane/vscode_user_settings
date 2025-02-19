@@ -94,7 +94,39 @@
             "name": "Find File",
             "icon": "search",
             "type": "command",
-            "command": "file-browser.open"
+            "command": "workbench.action.quickOpen"
+        },
+        {
+            "keys": "l",
+            "name": "lsp",
+            "icon": "list-flat",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "Format Document",
+                    "type": "command",
+                    "command": "editor.action.formatDocument"
+                },
+                {
+                    "key": "r",
+                    "name": "Rename Symbol",
+                    "type": "command",
+                    "command": "editor.action.rename"
+                },
+                {
+                    "key": "s",
+                    "name": "Symbol in editor",
+                    "type": "command",
+                    "command": "workbench.action.gotoSymbol"
+                },
+                {
+                    "key": "S",
+                    "name": "Symbol in workspace",
+                    "type": "command",
+                    "command": "workbench.action.showAllSymbols"
+                },
+            ]
         },
 
 
