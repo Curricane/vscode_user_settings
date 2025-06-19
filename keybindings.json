@@ -205,4 +205,19 @@
         "command": "workbench.action.navigateRight",
         "when": "isInDiffEditor && !isInDiffLeftEditor"
     },
+	{
+		"key": "g+r",
+		"command": "references-view.findReferences",
+		//"when": "editorHasReferenceProvider"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "fittencode.editCompletionAccept",
+		"when": "editorTextFocus && fittencode.hasEditCompletions"
+	},
+	{
+		"key": "tab",
+		"command": "-fittencode.editCompletionAccept",
+		"when": "editorTextFocus && fittencode.hasEditCompletions"
+	}
 ]
