@@ -128,6 +128,50 @@
                 },
             ]
         },
+        {
+            "keys": "g",
+            "name": "Git",
+            "icon": "git-branch",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "j",
+                    "name": "Jump to next change",
+                    "icon": "arrow-down",
+                    "type": "command",
+                    "command": "workbench.action.editor.nextChange"
+                },
+                {
+                    "key": "k",
+                    "name": "Jump to previous change",
+                    "icon": "arrow-down",
+                    "type": "command",
+                    "command": "workbench.action.editor.previousChange"
+                },
+                {
+                    "key": "f",
+                    "name": "+File",
+                    "icon": "file",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "d",
+                            "name": "Diff",
+                            "icon": "diff",
+                            "type": "command",
+                            "command": "magit.diff-file"
+                        },
+                        {
+                            "key": "l",
+                            "name": "Show log/timeline",
+                            "icon": "history",
+                            "type": "command",
+                            "command": "timeline.focus"
+                        }
+                    ]
+                }
+            ]
+        },
 
 
         // drop
