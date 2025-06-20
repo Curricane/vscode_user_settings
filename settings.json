@@ -235,6 +235,14 @@
             "keys": "*",
             "position": -1,
         },
+        {
+            "keys": ";",
+            "position": -1
+        },
+        {
+            "keys": "/",
+            "position": -1,
+        }
     ],
     "fittencode.languagePreference.displayPreference": "zh-cn",
     "fittencode.languagePreference.commentPreference": "zh-cn",
