@@ -193,5 +193,10 @@
         },
     ],
     "fittencode.languagePreference.displayPreference": "zh-cn",
-    "fittencode.languagePreference.commentPreference": "zh-cn"
+    "fittencode.languagePreference.commentPreference": "zh-cn",
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.SSH.remotePlatform": {
+        "192.168.0.227": "linux"
+    },
+    "http.proxyStrictSSL": false
 }
